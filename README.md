@@ -4,22 +4,27 @@
 
 Bachelor's thesis examining credit demand and discouragement among Afghan firms, with comparisons across Pakistan, Tajikistan, and two Afghan survey waves.
 
-- Compared XGBoost with ridge-penalised logistic regression using five-fold out-of-fold AUC and bootstrap confidence intervals.
+- Distinguished credit demand from no need, and discouraged borrowing from no need among non-applicants.
+- Compared XGBoost with ridge-penalised logistic regression using five-fold out-of-fold AUC, bootstrap confidence intervals, and paired model comparisons.
 - Used SHAP to examine the firm characteristics associated with model predictions.
-- Examined changes over time using matched predictors and comparisons with and without region.
+- Investigated changes over time using matched predictors and comparisons with and without region.
+- Analysed survey-weighted discouragement prevalence and reported reasons for not applying for credit.
 
-`R` `XGBoost` `glmnet` `SHAP`
+`R` `XGBoost` `glmnet` `caret` `pROC` `dplyr` `ggplot2` `SHAP`
 
 ---
 
 ### [Credit Demand Prediction Pipeline](https://github.com/hawaashams-lgtm/credit-demand-pipeline)
 
-An object-oriented Python project for predicting firm credit demand using World Bank Enterprise Survey data.
+An object-oriented Python pipeline for analysing and predicting credit demand among Afghan firms using World Bank Enterprise Survey data.
 
-- Organised data preprocessing, exploratory analysis, visualisation, and modelling into a structured pipeline.
-- Used XGBoost to model credit demand.
+- Built five classes separating data loading, preprocessing, exploratory analysis, model training, and visualisation.
+- Implemented survey-code cleaning, missing-value treatment, feature engineering, log transformations, and categorical encoding.
+- Tuned XGBoost across 64 hyperparameter combinations using five-fold stratified cross-validation, ROC-AUC scoring, and early stopping.
+- Created nine visualisations covering distributions, correlations, regional and sector differences, financing sources, and model feature importance.
+- Added a command-line interface with configurable data and output folders.
 
-`Python` `XGBoost`
+`Python` `pandas` `NumPy` `scikit-learn` `XGBoost` `Matplotlib` `seaborn`
 
 ---
 
