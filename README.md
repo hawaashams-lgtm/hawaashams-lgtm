@@ -36,3 +36,17 @@ An analysis of banking performance and credit risk in Germany and Italy using EC
 - Presented the analysis through Tableau visualisations.
 
 `Tableau` `Python`
+
+---
+
+### [IMDb Mini Database](https://github.com/hawaashams-lgtm/imdb-mini-database)
+
+A collaborative IMDb-style database project built with MySQL and Python.
+
+- Includes database models and a relational schema.
+- Uses SQL scripts to populate and query movie data.
+- Provides a Streamlit interface for exploring the database.
+
+`MySQL` `SQL` `Python` `Streamlit`
+
+---
